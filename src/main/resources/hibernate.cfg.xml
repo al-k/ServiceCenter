@@ -6,16 +6,7 @@
   <session-factory>
       <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
       <property name="hibernate.show_sql">true</property>
-      <property name="hibernate.current_session_context_class">thread</property>
-      <property name="hibernate.connection.datasource">jdbc/ServiceCenter</property>
-      <property name="hibernate.connection.username">root</property>
-      <property name="hibernate.connection.password">qwerty</property>
-    <property name="connection.url">jdbc:mysql://localhost:3306/ServiceCenter?zeroDateTimeBehavior=convertToNull</property>
-    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-      <mapping resource="ua/alk/servicecenter/entities/Unit.hbm.xml"/>
-      <mapping resource="ua/alk/servicecenter/entities/User.hbm.xml"/>
-
-      <!-- DB schema will be updated if needed -->
-    <!-- <property name="hbm2ddl.auto">update</property> -->
+      <mapping resource="ua.alk.servicecenter.entities/Unit.hbm.xml"/>
+      <mapping resource="ua.alk.servicecenter.entities/User.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
